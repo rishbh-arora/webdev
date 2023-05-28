@@ -1,0 +1,72 @@
+/* CSS styles for navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3782c9;
+}
+
+/* CSS styles for dropdown menu */
+.dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content {
+    padding: 8px 12px;
+    white-space: normal; 
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* CSS styles for post */
+.post {
+    display: flex;
+    align-items: center;
+}
+
+.post-content {
+    margin-right: 20px;
+}
+
+.post-meta {
+    font-style: italic;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
