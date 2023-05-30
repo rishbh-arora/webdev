@@ -1,0 +1,353 @@
+/* CSS for the header */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Playfair+Display:wght@400;600&display=swap');
+
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url("background-image.jpeg");
+}
+
+header {
+    position: relative;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.logoimg-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+}
+
+.logoimg {
+    display: inline-block;
+    height: 110px;
+    width: 80px;
+    margin: auto;
+    padding-top: 25px;
+
+}
+
+.header-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1
+}
+
+.header-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.tagline {
+    position: absolute;
+    top: 90px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+nav ul li a:hover {
+    color: #c6c6c6;
+}
+
+/* CSS styles for dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    position: relative;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* CSS for main part */
+
+main {
+    margin: 0 40px 0px 40px;
+}
+
+text {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.uni {
+    display: flex;
+    justify-content:space-around;
+    background-color: #ffffff;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.line {
+    background-color: black;
+    width: 37%;
+    height: 2px;
+}
+
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 55px;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+h3 {
+    color: black;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family:'Orbitron';
+    transition: 0.3s;
+}
+
+
+h3 a {
+    color: black
+}
+
+.space h3[id = 'space']:hover {
+    font-size: 26px;
+}
+
+.space h3 a:hover {
+    font-style: italic;
+}
+
+#title {
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 65px;
+    margin-bottom: 3px;
+}
+
+p {
+    font-size: 20px;
+    padding: 40px 40px 30px 40px;
+    font-family: "Montserrat";
+}
+
+img[name="phase"] {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* CSS styles for navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #a5c4e2;
+}
+
+/* CSS styles for post */
+
+article {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+.last {
+    padding-bottom: 30px;
+}
+
+article[name="more"] {
+    padding: 30px;
+
+}
+
+.post-head {
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.post-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+/* CSS for space cards */
+
+
+.containertop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    padding: 10px;
+}
+
+.container h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    padding-bottom: 7px;
+}
+
+/*CSS code for footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* CSS for social links */
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
