@@ -178,7 +178,12 @@ text {
     height: 55px;
     align-items: center;
     margin-left: 15px;
+    width: 99.2%;
 }
+
+/* .space h3 {
+    width: 100%;
+} */
 
 
 h3 {
@@ -253,7 +258,7 @@ article {
 }
 
 .last {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 article[name="more"] {
@@ -275,20 +280,30 @@ article[name="more"] {
     text-align:justify;
 }
 
-.post-content div[name="outer"] {
+
+.post-content div{ 
     display: flex;
-    margin: 30px 0px 40px 60px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-bottom: 29px;
+    padding: 0px;
+    width: 40%;
 }
 
-.post-content div[name="outer"] div p[name="info"] {
-    font-size: 12px;
+.post-content div[name="left"] {
+    float: left;
+}
+
+.post-content div[name="right"] {
+    float: right;
+}
+
+.post-content p[name="info"] {
+    font-size: 15px;
     margin: 0px;
 }
-
-p[name="left"] {
-    margin: 20px 40px 0px 0px;
-}
-
 .containertop {
     display: flex;
     justify-content: space-between;
