@@ -12,6 +12,11 @@ header {
     margin-bottom: 0px;
 }
 
+.search {
+    margin-top: 17px;
+    width: 500px;
+}
+
 .logoimg-div {
     display: flex;
     justify-content: space-between;
@@ -149,7 +154,7 @@ body {
     background-image: url("background-image.jpeg");
 }
 main {
-    margin: 0 40px 0px 40px;
+    margin: 15px 40px 0px 40px;
 }
 
 .uni {

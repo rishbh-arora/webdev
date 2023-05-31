@@ -17,6 +17,11 @@ header {
     margin-bottom: 0px;
 }
 
+.search {
+    margin-top: 17px;
+    width: 500px;
+}
+
 .logoimg-div {
     display: flex;
     justify-content: space-between;
@@ -200,14 +205,18 @@ h3 a {
 #title {
     padding: 10px;
     font-family: 'Merriweather', serif;
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: 3px;
 }
 
 p {
     font-size: 20px;
-    padding: 40px 40px 30px 40px;
+    margin: 30px 60px 0px 60px;
     font-family: "Montserrat";
+}
+
+div text[name="img-sub"] {
+    color: black;
 }
 
 img[name="phase"] {
@@ -258,16 +267,27 @@ article[name="more"] {
 }
 
 .post-content {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 30px;
+    text-align:justify;
 }
 
-/* CSS for space cards */
+.post-content div[name="outer"] {
+    display: flex;
+    margin: 30px 0px 40px 60px;
+}
 
+.post-content div[name="outer"] div p[name="info"] {
+    font-size: 12px;
+    margin: 0px;
+}
+
+p[name="left"] {
+    margin: 20px 40px 0px 0px;
+}
 
 .containertop {
     display: flex;
@@ -294,6 +314,12 @@ article[name="more"] {
     font-family: 'Merriweather', serif;
     font-size: 22px;
     padding-bottom: 7px;
+    height: 90px ;
+}
+
+.card-text {
+    font-size: 15px;
+    margin: 0px;
 }
 
 /*CSS code for footer */
