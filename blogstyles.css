@@ -178,12 +178,7 @@ text {
     height: 55px;
     align-items: center;
     margin-left: 15px;
-    width: 99.2%;
 }
-
-/* .space h3 {
-    width: 100%;
-} */
 
 
 h3 {
@@ -258,7 +253,7 @@ article {
 }
 
 .last {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 article[name="more"] {
@@ -280,30 +275,20 @@ article[name="more"] {
     text-align:justify;
 }
 
-
-.post-content div{ 
+.post-content div[name="outer"] {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 20px;
-    margin-bottom: 29px;
-    padding: 0px;
-    width: 40%;
+    margin: 30px 0px 40px 60px;
 }
 
-.post-content div[name="left"] {
-    float: left;
-}
-
-.post-content div[name="right"] {
-    float: right;
-}
-
-.post-content p[name="info"] {
-    font-size: 15px;
+.post-content div[name="outer"] div p[name="info"] {
+    font-size: 12px;
     margin: 0px;
 }
+
+p[name="left"] {
+    margin: 20px 40px 0px 0px;
+}
+
 .containertop {
     display: flex;
     justify-content: space-between;
@@ -391,4 +376,106 @@ footer {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Comment section */
+#comments-section {
+    margin-top: 50px;
+}
+
+#comments-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comments-container {
+    margin-top: 30px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    color: #cac2c2;
+}
+
+.comment .comment-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.comment .comment-content {
+    margin-left: 30px;
+}
+
+.comment .comment-content p {
+    margin: 0;
+    padding: 0;
+    color: #cac2c2; 
+    margin-top: 10px;
+}
+
+.comment .comment-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+#comment-form {
+    margin-top: 50px;
+    color: #cac2c2;
+}
+
+#comment-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: #cac2c2;
+}
+
+#comment-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cac2c2;
+    margin-bottom: 10px;
+}
+
+#comment-form textarea {
+    height: 120px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#comment-form textarea:focus,
+#comment-form input[type="text"]:focus {
+    color: #333;
+}
+
+
+#comment-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comment-form button[type="submit"]:hover {
+    background-color: #45a049;
+    margin-top: 10px;
 }
