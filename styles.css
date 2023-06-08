@@ -7,8 +7,6 @@
     margin: 0px;
 }
 header {
-    position: sticky;
-    top: 0px;
     height: 200px;
 }
 
@@ -313,9 +311,12 @@ article[name="more"] {
 
 /*CSS code for footer */
 footer {
-    background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
+}
+
+footer p {
+    color: white;
 }
 
 .footer-links {
@@ -327,7 +328,7 @@ footer {
 .footer-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 
 /* CSS for social links */
