@@ -177,8 +177,9 @@ text {
     background: white;
     height: 55px;
     align-items: center;
-    margin-left: 15px;
-    width: 99.2%;
+    width: 100%;
+    margin-left: 15px; 
+    width: 98.95%;
 }
 
 /* .space h3 {
@@ -391,4 +392,107 @@ footer {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Comment section */
+#comments-section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#comments-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comments-container {
+    margin-top: 30px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    color: #cac2c2;
+}
+
+.comment .comment-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.comment .comment-content {
+    margin-left: 30px;
+}
+
+.comment .comment-content p {
+    margin: 0;
+    padding: 0;
+    color: #cac2c2; 
+    margin-top: 10px;
+}
+
+.comment .comment-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+#comment-form {
+    margin-top: 50px;
+    color: #cac2c2;
+}
+
+#comment-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: #cac2c2;
+}
+
+#comment-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cac2c2;
+    margin-bottom: 10px;
+}
+
+#comment-form textarea {
+    height: 120px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#comment-form textarea:focus,
+#comment-form input[type="text"]:focus {
+    color: #333;
+}
+
+
+#comment-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#comment-form button[type="submit"]:hover {
+    background-color: #45a049;
+    margin-top: 10px;
 }
